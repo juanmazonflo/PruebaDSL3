@@ -54,7 +54,7 @@ job('Job test Hola Mundo') {
     	}
 	steps {
 		shell('''
-			echo "Hooola Mundo!!!" 
+			echo "Hola Mundo!!!" 
 
 		''')
 	}
