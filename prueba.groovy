@@ -7,6 +7,7 @@ job('Java Prueba App DSL 3') {
         }
     }
     triggers {
+	cron('H/6 * * * *')
     	githubPush()
     }    
     steps {
@@ -20,7 +21,7 @@ job('Java Prueba App DSL 3') {
         }
         shell('''
           echo "Entregaaa: Desplegando la aplicación" 
-          java -jar "/var/jenkins_home/workspace/Java Maven App DSL 3/target/my-app-1.0-SNAPSHOT.jar"
+          java -jar "/var/jenkins_home/workspace/Java Prueba App DSL 3/target/my-app-1.0-SNAPSHOT.jar"
         ''')  
     }
     publishers {
@@ -54,7 +55,11 @@ job('Job test Hola Mundo') {
     	}
 	steps {
 		shell('''
+<<<<<<< HEAD
 			echo "Hoooola Mundo!!!" 
+=======
+			echo "Hoooooooooola Mundo!!!" 
+>>>>>>> 7e90755dea397609e0001d87e3151fa27326a3d4
 
 		''')
 	}
