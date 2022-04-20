@@ -55,12 +55,7 @@ job('Job test Hola Mundo') {
     	}
 	steps {
 		shell('''
-<<<<<<< HEAD
 			echo "Hoooola Mundo!!!" 
-=======
-			echo "Hoooooooooola Mundo!!!" 
->>>>>>> 7e90755dea397609e0001d87e3151fa27326a3d4
-
 		''')
 	}
 }
