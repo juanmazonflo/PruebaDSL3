@@ -7,7 +7,6 @@ job('Java Prueba App DSL 3') {
         }
     }
     triggers {
-	cron('H/6 * * * *')
     	githubPush()
     }    
     steps {
